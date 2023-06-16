@@ -6,11 +6,11 @@ import os
 
 def main():
     st.set_page_config(layout="wide", page_title="Box Condition Prediction")
-    st.markdown("<h1 style='text-align: center; color: white;'>Box condition Prediction</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: black;'>Box condition Prediction</h1>", unsafe_allow_html=True)
     st.sidebar.write("## Upload  :gear:")
     uploaded_file = st.sidebar.file_uploader("Choose an image file", type=["jpg", "jpeg", "png"])
     col1, col2 = st.columns(2)
-    col2.markdown("<h3 style='text-align: center; color: white;'>Predicted Output</h3>", unsafe_allow_html=True)
+    col2.markdown("<h3 style='text-align: center; color: black;'>Predicted Output</h3>", unsafe_allow_html=True)
 
     
     # Create a file uploader in Streamlit
