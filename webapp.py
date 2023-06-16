@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 import json
 import time
+import os
 
 def main():
     st.set_page_config(layout="wide", page_title="Box Condition Prediction")
@@ -15,8 +16,10 @@ def main():
     # Create a file uploader in Streamlit
 
     if uploaded_file is None:
-
-        col1.image(r'Temp\noimg.png', caption="Uploaded Image", use_column_width=True)
+        # Using a path relative to the current file
+        current_file_path = os.path.abspath(__file__)
+        image_path = os.path.join(os.path.dirname(current_file_path), 'Temp', 'noimg.png')
+        col1.image(image_path, caption="Uploaded Image", use_column_width=True)
 
     else:
 
