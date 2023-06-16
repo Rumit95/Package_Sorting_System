@@ -184,5 +184,3 @@ Werkzeug==2.2.3
 wrapt==1.15.0
 zipp==3.15.0
 zstandard==0.21.0
-opencv-python
-libgl1-mesa-glx
