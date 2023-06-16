@@ -16,7 +16,7 @@ def main():
 
     if uploaded_file is None:
 
-        col1.image(r'temp\noimg.png', caption="Uploaded Image", use_column_width=True)
+        col1.image(r'Temp\noimg.png', caption="Uploaded Image", use_column_width=True)
 
     else:
 
