@@ -3,8 +3,13 @@ import requests
 import json
 import time
 import os
+import subprocess
 
 def main():
+
+    command = "uvicorn fapi:app --reload"
+    subprocess.Popen(command, shell=True)
+
     st.set_page_config(layout="wide", page_title="Box Condition Prediction")
     st.markdown("<h1 style='text-align: center; color: black;'>Box condition Prediction</h1>", unsafe_allow_html=True)
     st.sidebar.write("## Upload  :gear:")
