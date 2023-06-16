@@ -37,8 +37,8 @@ def main():
             st.sidebar.success("File uploaded successfully!")
             response_data = json.loads(response.text)
             col2.write('\n')
-            col2.markdown(f"<h6 style='text-align:center ; color: white;'>Camera angle is {response_data['cam']} view. </h6>", unsafe_allow_html=True)
-            col2.markdown(f"<h6 style='text-align:center ; color: white;'>Box Condition is {response_data['condition']}. </h6>", unsafe_allow_html=True)
+            col2.markdown(f"<h6 style='text-align:center ; color: black;'>Camera angle is {response_data['cam']} view. </h6>", unsafe_allow_html=True)
+            col2.markdown(f"<h6 style='text-align:center ; color: black;'>Box Condition is {response_data['condition']}. </h6>", unsafe_allow_html=True)
             execution_time = time.time() - start_time
             st.sidebar.write(f"Time Required {execution_time:.2f} secs.")
         else:
